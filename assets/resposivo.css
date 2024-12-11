@@ -1,0 +1,1086 @@
+/* Layouts Responsivos */
+
+@media (max-width: 1000px) {
+  .menu {
+    text-align: center;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  nav {
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo {
+    font-size: 5.8vw;
+    text-align: center;
+    font-size: auto;
+    letter-spacing: normal; /* Ajusta o espaçamento entre as letras */
+
+    overflow-wrap: break-word; /* Compatibilidade para navegadores antigos */
+    hyphens: auto; /* Adiciona hifens automaticamente se necessário */
+  }
+  .menu-text-navegacao {
+    font-size: 2vw;
+    padding: 2vw 0vw;
+  }
+  .Logo-Cantinho-das-Delicias {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .conteiner-conteudo-principal {
+    height: 100%;
+  }
+  .destaque,
+  .rosa,
+  h1,
+  h2,
+  
+  .destaque {
+    text-align: center;
+    font-size: 4vw;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3.70vw;
+  }
+  hr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .subtitulo-principal {
+    font-size: 3.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .subtitulo-principal + p {
+    padding: 0 30px;
+    font-size: 3.3vw;
+  }
+
+  .conteiner-imagens-principal {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ocupa toda a altura da tela */
+    margin: 0;
+    overflow: hidden; /* Oculta o overflow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-conteiner {
+    border: 4px solid #ee09e2;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 5vw;
+    margin: 7vw;
+  }
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    width: 50vw;
+    height: 50vw;
+  }
+  .carousel img {
+    border: 4px solid #ee09e2;
+    width: 100%;
+    height: 100%;
+  }
+  button {
+    color: #ffffff;
+    text-decoration: none;
+    border: 4px solid;
+    border-color: #ee09e2;
+    border-radius: 2vw;
+    padding: 0.7vw;
+    background: radial-gradient(
+      circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
+  }
+
+  button:hover {
+    background: #ee09e2;
+    border-color: rgba(148, 188, 233, 0.993);
+  }
+
+  .botao-contatos-zap {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .whatsapp-container {
+    display: flex;
+    align-items: center;
+    margin: 0; /* Espaçamento vertical entre os contêineres */
+    padding: 0.32vw;
+    gap: 0.7vw;
+  }
+
+  .texto_botao {
+    font-size: 2.9vw;
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em uma coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    padding: 0.5vw;
+    font-weight: 600;
+  }
+  .texto_botao-Whatszap {
+    padding: 0;
+    font-size: 2.9vw;
+    font-weight: 600;
+  }
+  .img-botao-Watszap {
+    height: 4.9vw;
+  }
+  .receitas-titulo {
+    text-align: center;
+    font-size: 8vw; /* Reduz para 50% menor */
+  }
+  .receitas-subtitulo {
+    text-align: center;
+    font-size: 6vw; /* Reduz para 50% menor */
+    margin-bottom: 3vw;
+  }
+  .receitas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7vw;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .receita-titulo {
+    font-size: 7vw;
+  }
+
+  .receita-descricao {
+    font-size: 5vw;
+    padding: 1vw;
+  }
+  .receita-descricao:hover {
+    font-size: 6.9vw;
+  }
+  .receitas-card {
+    border: 4px solid #ee09e2;
+    margin: 0;
+    padding: 10vw;
+    width: 100%;
+    gap: 3vw;
+  }
+  .receitas-card-central {
+    border: 4px solid #ee09e2;
+    gap: 3vw;
+    margin-top: 3vw;
+    padding: 10vw;
+  }
+  #prev-btn {
+    border: none;
+    font-size: 13vw;
+    left: 1vw;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  #prev-btn:hover {
+    font-size: 17vw;
+  }
+
+  #next-btn {
+    border: none;
+    font-size: 13vw;
+    right: 1vw;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+  #next-btn:hover {
+    font-size: 17vw;
+  }
+
+  .menu_footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .footer-midia {
+    margin-bottom: 10vw;
+    font-size: 7vw;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+  }
+  .text-icons-redesocial {
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    font-size: 6.9vw;
+    font-weight: 600;
+    transition: font-size 0.3s ease 0s;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .text-icons-redesocial:hover {
+    font-size: 9.99vw;
+    color: #ee09e2;
+  }
+
+  .footer-autor {
+    color: #726c67;
+    font-family: Inter;
+    font-size: 2.94vw;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  .amor {
+    font-size: 4.99vw;
+    color: #ee09e2;
+    cursor: grab;
+    padding: 0;
+    transition: font-size 0.3s ease 0s;
+    -webkit-transition: font-size 0.3s ease 0s;
+    -moz-transition: font-size 0.3s ease 0s;
+    -ms-transition: font-size 0.3s ease 0s;
+    -o-transition: font-size 0.3s ease 0s;
+  }
+
+  .amor:hover {
+    font-size: 4.99vw;
+    margin: 0;
+    color: red;
+  }
+  .footer-copy {
+    font-size: 1.9vw; /* Reduz para 50% menor */
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    .Logo-Cantinho-das-Delicias {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+    }
+    .menu {
+      display: none;
+      text-align: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu-icon {
+      display: block;
+      font-size: 50px;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 60px;
+    }
+
+    .menu-hamburger {
+      flex-direction: row;
+      gap: 1rem;
+      background-color: #ee09e2;
+      padding: 0;
+      border-radius: 5px;
+      position: absolute;
+      top: 80px;
+      right: 10px; /* Posiciona o menu hamburger à direita */
+      width: 150px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      animation: slideDown 0.5s ease-out forwards;
+    }
+
+    .menu-hamburger a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 15px;
+      padding: 5px 5px;
+      border: solid 1px #ee09e2;
+      border-radius: 5px;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 0.5s ease-out forwards;
+      animation-delay: 0.3s;
+      -webkit-animation: fadeIn 0.5s ease-out forwards;
+}
+
+    .menu-hamburger a:hover {
+      font-size: 25px;
+      background-color: #d807b7;
+    }
+
+    .menu-text-navegacao {
+      width: 100%;
+      font-size: 10px;
+      margin: 1px;
+      padding: 5px;
+      display: inline-block; /* Garante que o texto e o contêiner se ajustem */
+      border-color: #ee09e2;
+      border-radius: 7px;
+      background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+    }
+
+    /* Animações */
+    @keyframes slideDown {
+      from {
+        transform: translateY(-20%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  .conteiner-imagens-principal {
+    position: relative;
+    margin: 0;
+    overflow: hidden; /* Oculta o overflow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .menu_footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media (max-width: 576px) {
+    .menu {
+      display: none;
+    }
+
+    .menu-icon {
+      font-size: 35px;
+      cursor: pointer;
+      position: absolute;
+      top: 5px;
+      right: 43px;
+    }
+
+    .menu-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: #ee09e2;
+      padding: 0;
+      border-radius: 5px;
+      position: absolute;
+      top: 50px;
+      right: 15px; /* Posiciona o menu hamburger à direita */
+      width: auto; /* Ajusta automaticamente conforme o texto */
+      max-width: auto; /* Define um limite máximo de largura */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      animation: slideDown 0.5s ease-out forwards;
+    }
+
+    .menu-hamburger a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 15px; /* Ajusta o tamanho da fonte */
+      padding: 7px 5px;
+      background-color: #ee09e2;
+      border-radius: 5px;
+      text-align: center;
+      display: block;
+      opacity: 0;
+      animation: fadeIn 0.5s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+
+    .menu-hamburger a:hover {
+      font-size: 15px;
+      background-color: #d807b7;
+    }
+    /*efeito de animação menu-hamburg*/
+    @keyframes slideDown {
+      from {
+        transform: translateY(-20%);
+        opacity: 0;
+        -webkit-transform: translateY(-20%);
+        -moz-transform: translateY(-20%);
+        -ms-transform: translateY(-20%);
+        -o-transform: translateY(-20%);
+}
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .menu-text-navegacao {
+      font-size: 10px;
+      border: 2px solid #ee09e2;
+      border-color: #ee09e2;
+      border-radius: 7px;
+      margin: 1px;
+      padding: 10px;
+      background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      -o-border-radius: 7px;
+      display: inline-block; /* Garante que o texto e o contêiner se ajustem */
+    }
+
+    .carousel-btn {
+      position: absolute;
+
+      background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 0) 0%,
+        rgba(148, 188, 233, 0.007) 100%
+      );
+      color: rgb(255, 255, 255);
+      border: none;
+      font-size: 2em;
+      padding: 10px;
+      -webkit-transform: translate(50% -50%);
+      -moz-transform: translate(50% -50%);
+      -ms-transform: translate(50% -50%);
+      -o-transform: translate(50% -50%);
+    }
+
+    .carousel-btn:hover {
+      color: #ee09e2;
+      background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 0) 0%,
+        rgba(148, 188, 233, 0.007) 100%
+      );
+    }
+
+    .subtitulo-principal {
+      
+      text-align: center;
+    }
+  }
+  .subtitulo-principal + p {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .receitas-card {
+    flex: 1 1 calc(100% - 20px);
+  }
+
+  @media (max-width: 480px) {
+    .Logo-Cantinho-das-Delicias {
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .menu-icon {
+      font-size: 35px;
+      cursor: pointer;
+      position: absolute;
+      top: 5px;
+      right: 39px;
+    }
+
+    .menu-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: #ee09e2;
+      padding: 0;
+      border-radius: 5px;
+      position: absolute;
+      top: 55px;
+      right: 19px; /* Posiciona o menu hamburger à direita */
+      width: auto; /* Ajusta automaticamente conforme o texto */
+      max-width: auto; /* Define um limite máximo de largura */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      animation: slideDown 0.5s ease-out forwards;
+    }
+
+    .menu-hamburger a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 11px; /* Ajusta o tamanho da fonte */
+      padding: 7px 5px;
+      background-color: #ee09e2;
+      border-radius: 5px;
+      text-align: center;
+      display: block;
+      opacity: 0;
+      animation: fadeIn 0.5s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+
+    .menu-hamburger a:hover {
+      font-size: 11px;
+      background-color: #d807b7;
+    }
+    /*efeito de animação menu-hamburg*/
+    @keyframes slideDown {
+      from {
+        transform: translateY(-20%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .menu-text-navegacao {
+      font-size: 10px;
+      border: 2px solid #ee09e2;
+      border-color: #ee09e2;
+      border-radius: 7px;
+      margin: 1px;
+      padding: 10px;
+      background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      -o-border-radius: 7px;
+      display: inline-block; /* Garante que o texto e o contêiner se ajustem */
+    }
+
+    .carousel-btn {
+      position: absolute;
+
+      color: rgb(255, 255, 255);
+      border: none;
+      font-size: 2em;
+      padding: 10px;
+      -webkit-transform: translate(50% -50%);
+      -moz-transform: translate(50% -50%);
+      -ms-transform: translate(50% -50%);
+      -o-transform: translate(50% -50%);
+    }
+
+    .carousel-btn:hover {
+      color: #ee09e2;
+    }
+
+    .subtitulo-principal {
+      text-align: center;
+    }
+  }
+  .subtitulo-principal + p {
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 400;
+  }
+  .receitas-card {
+    flex: 1 1 calc(100% - 20px);
+  }
+
+  .logo_icons {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  @media (max-width: 320px) {
+    .Logo-Cantinho-das-Delicias {
+      height: 110px;
+      width: 110px;
+    }
+    .logo {
+      display: block;
+    }
+    .menu {
+      display: none;
+    }
+
+    .menu-icon {
+      font-size: 30px;
+      cursor: pointer;
+      position: absolute;
+      padding: 5px;
+      top: 5px;
+      right: 24px;
+    }
+
+    .menu-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: #ee09e2;
+      padding: 0;
+      border-radius: 5px;
+      position: absolute;
+      top: 50px;
+      right: 10px; /* Posiciona o menu hamburger à direita */
+      width: auto; /* Ajusta automaticamente conforme o texto */
+      max-width: auto; /* Define um limite máximo de largura */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      animation: slideDown 0.5s ease-out forwards;
+    }
+
+    .menu-hamburger a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 9px; /* Ajusta o tamanho da fonte */
+      padding: 7px 5px;
+      background-color: #ee09e2;
+      border-radius: 5px;
+      text-align: center;
+      display: block;
+      opacity: 0;
+      animation: fadeIn 0.5s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+
+    .menu-hamburger a:hover {
+      font-size: 9px;
+      background-color: #d807b7;
+    }
+    /*efeito de animação menu-hamburg*/
+    @keyframes slideDown {
+      from {
+        transform: translateY(-20%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .menu-text-navegacao {
+      font-size: 10px;
+      border: 2px solid #ee09e2;
+      border-color: #ee09e2;
+      border-radius: 7px;
+      margin: 1px;
+      padding: 10px;
+      background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      -o-border-radius: 7px;
+      display: inline-block; /* Garante que o texto e o contêiner se ajustem */
+    }
+
+    .subtitulo-principal {
+      text-align: center;
+
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+    }
+    .subtitulo-principal + p {
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .receitas-card {
+      flex: 1 1 calc(100% - 20px);
+    }
+
+    a {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos para relógios digitais */
+    @media (max-width: 240px) {
+      .nav {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+      }
+
+      .Logo-Cantinho-das-Delicias {
+        height: 100vw;
+        width: 100vw;
+        padding: 0;
+        margin-top: -1vw;
+        margin-bottom: 10vw;
+        /*Ocupatodaaalturadatela*/
+        /*Ocupatodaalarguradatela*/
+        object-fit: cover;
+        /*Ajustaaimagemparacobriratelasemdistorcer*/
+        border: 4px solid;
+        border-color: #ee09e2;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+
+      .logo {
+        display: none; /* Esconde o texto do logo */
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .menu-icon {
+        display: none;
+      }
+
+      .menu-hamburger {
+        display: none;
+      }
+
+      .receitas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+        width: 100%;
+      }
+      .section-conteiner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background: none;
+      }
+
+      .conteiner-imagens-principal {
+        position: relative;
+
+        margin: 0;
+        overflow: hidden; /* Oculta o overflow */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .carousel {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vw; /* Ocupa toda a altura da tela */
+        position: relative; /* Necessário para posicionar os botões de navegação */
+      }
+
+      .carousel figure {
+        margin: 0;
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%; /* Ocupa toda a altura do contêiner */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; /* Necessário para manter o tamanho das imagens */
+      }
+
+      .carousel img {
+        width: 100%;
+        height: 100%;
+        /*Ocupatodaaalturadocontêiner*/
+        object-fit: cover;
+       
+        border-color: #ee09e2;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+      }
+      .carousel img:hover {
+        width: 100%;
+        height: 100%;
+        /*Ocupatodaaalturadocontêiner*/
+        object-fit: cover;
+        /*Ajustaaimagemparacobrirsemdistorcer*/ /*Tamanhoidealparateladerelógio*/
+        border: 4px solid;
+        border-color: #ee09e2;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+
+      .carousel-btn {
+        position: absolute;
+
+        background: none;
+        color: rgb(255, 255, 255);
+        font-size: 1em; /* Tamanho ideal para tela de relógio */
+        padding: 0;
+        cursor: pointer;
+      }
+
+      .carousel-btn:hover {
+        color: #ee09e2;
+        background: none;
+      }
+
+      #prev-btn {
+        border: none;
+        font-size: 16vw;
+        left: -20vw;
+        padding: 0;
+        margin: 0;
+        transition: transform 0.5s ease-in-out;
+      }
+      #prev-btn:hover {
+        font-size: 20vw;
+      }
+
+      #next-btn {
+        border: none;
+        font-size: 16vw;
+        right: -20vw;
+        padding: 0;
+        margin: 0;
+        transition: transform 0.5s ease-in-out;
+      }
+      #next-btn:hover {
+        font-size: 20vw;
+      }
+
+
+      .Conteiner_Botao {
+        margin-top: 70px;
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        color: #ffffff;
+        text-decoration: none;
+        border: 3px solid;
+        border-color: #ee09e2;
+        border-radius: 100px;
+        padding: 5px;
+        /*Reduzopadding*/
+        width: 80%;
+        /*Reduzotamanhopara50%menor*/
+        margin: 5px 0;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+      }
+
+      button:hover {
+        background: #ee09e2;
+        border-color: rgba(148, 188, 233, 0.993);
+      }
+
+      .whatsapp-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        padding: 0.9vw;
+        gap: 2vw;
+      }
+
+      .texto_botao {
+        font-size: 10px;
+        padding: 2px 5px;
+        margin: 0;
+        text-align: center;
+      }
+      .botao-contatos-zap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin: 0;
+        padding: 0;
+        border-radius: 5px;
+        width: 100%; /* Tamanho do botão é 50% da tela */
+        text-align: center;
+        text-decoration: none;
+      }
+      .img-botao-Watszap {
+        height: 7vw; /* Reduzido para 50% menor */
+        margin-right: -5vw; /* Espaçamento entre ícone e texto */
+      }
+      .texto_botao-Whatszap {
+        font-size: 10px; /* Ajusta o tamanho do texto */
+        font-weight: 600;
+      }
+
+      .destaque {
+        text-align: center;
+        font-size: 7vw;
+      }
+      h1 {
+        text-align: center;
+        font-size: 4.70vw;
+      }
+      hr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+      }
+      .subtitulo-principal {
+        font-size: 4.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      .subtitulo-principal + p {
+        padding: 0 30px;
+        font-size: 4.3vw;
+      }
+     
+      
+    
+      .receitas-cabecalhos {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 60px 0;
+      }
+
+      .receitas-card {
+        border: 4px solid #ee09e2;
+        border-radius: 90px;
+        width: 100%;
+      }
+      .receitas-card-central {
+        border: 4px solid #ee09e2;
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        );
+        width: 100%;
+        margin-top: 3vw;
+        padding: 10vw;
+        border-radius: 90px;
+        -webkit-border-radius: 90px;
+        -moz-border-radius: 90px;
+        -ms-border-radius: 90px;
+        -o-border-radius: 90px;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+      }
+
+      .menu_footer {
+        padding: 0.5rem;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+}

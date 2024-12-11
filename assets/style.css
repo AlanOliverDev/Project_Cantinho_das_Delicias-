@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {
+  background: #e7a8df;
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 5vw;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw; /* Usa unidades relativas para espaçamento */
+  list-style-type: none;
+  color: #fff2e7;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 4vw;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Posiciona o menu hamburger à direita */
+}
+
+.menu-text-navegacao {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  font-size: 2vw;
+  padding: 0.3vw;
+  transition: font-size 0.3s;
+  -webkit-transition: font-size 0.3s;
+  -moz-transition: font-size 0.3s;
+  -ms-transition: font-size 0.3s;
+  -o-transition: font-size 0.3s;
+}
+
+.menu-text-navegacao:hover {
+  font-size: 3.3vw;
+  color: #ee09e2;
+}
+
+html {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+.Logo-Cantinho-das-Delicias {
+  height: 10%;
+  width: 10%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.logo {
+  color: #ee09e2;
+  font-family: Teko;
+  font-size: 5vw;
+  font-weight: 600;
+  text-transform: uppercase; /* deixa todo o texto em maisculo*/
+  text-align: center;
+}
+
+.logo:hover {
+  color: #ee09e2;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner-conteudo-principal {
+  position: relative;
+  width: 100%;
+  height: 30vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.section-conteiner {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+  padding: 3vw;
+  margin: 0 35px;
+  border: 0.3vw solid #ee09e2;
+  border-color: #ee09e2;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(    circle,    rgba(238, 174, 202, 1) 0%,    rgba(148, 187, 233, 1) 100%  );
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.header-conteiner-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.destaque {
+  font-family: Epilogue;
+  font-size: 3.5vw;
+  font-weight: 900;
+  
+  text-transform: uppercase;
+}
+
+.rosa {
+  color: #ee09e2;
+}
+
+.amarelo {
+  color: #e7a80e;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 2.59vw;
+  font-weight: 800;
+}
+
+hr {
+  border: 1px solid #ee09e2;
+}
+
+.subtitulo-principal {
+  font-family: Inter;
+  font-size: 1.9vw;
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.subtitulo-principal + p {
+  font-size: 1.6vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.conteiner-imagens-principal {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden; /* Oculta o overflow */
+  width: 25vw;
+  height: 100%;
+}
+
+.carousel figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Inclui a borda na largura total do contêiner */
+  overflow: hidden; /* Garante que o border-radius da imagem seja visível */
+  width: 100%; /* Garante que as imagens ocupem a largura total */
+  height: 100%; /* Garante que as imagens ocupem a altura total */
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%; /* Mantém a responsividade das imagens */
+  display: block;
+  border: 0.3vw solid white;
+  object-fit: cover;
+  transition: border-radius 0.3s, border 0.3s;
+  -webkit-tranition: border-radius 0.3s, border 0.3s;
+  -moz-transition: border-radius 0.3s, border 0.3s;
+  -ms-transition: border-radius 0.3s, border 0.3s;
+  -o-transition: border-radius 0.3s, border 0.3s;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.carousel img:hover {
+  border-radius: 50px;
+  border: 0.3vw solid #ee09e2;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.carousel-btn {
+  position: absolute;
+  /*Centralizaverticalmente*/
+  transform: translate(50% -50%);
+  background: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 2vw;
+  /*Ajustaotamanhodobotãocombasenalarguradaviewport*/
+  padding: 1vw;
+  /*Ajustaopaddingcombasenalarguradaviewport*/
+  cursor: pointer;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  z-index: 1000;
+}
+
+.carousel-btn:hover {
+  color: #ee09e2;
+  background: none;
+}
+
+#prev-btn {
+  border: none;
+  font-size: 6vw;
+  left: 1vw;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.5s ease-in-out;
+}
+#prev-btn:hover {
+  font-size: 8vw;
+}
+
+#next-btn {
+  border: none;
+  font-size: 6vw;
+  right: 1vw;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.5s ease-in-out;
+}
+#next-btn:hover {
+  font-size: 8vw;
+}
+
+.Conteiner_Botao {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  color: #ffffff;
+  text-decoration: none;
+  border: 0.3vw solid;
+  border-color: #ee09e2;
+  border-radius: 1vw;
+  padding: 0.3vw;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  -webkit-border-radius: 1vw;
+  -moz-border-radius: 1vw;
+  -ms-border-radius: 1vw;
+  -o-border-radius: 1vw;
+}
+
+button:hover {
+  background: #ee09e2;
+  border-color: rgba(148, 188, 233, 0.993);
+}
+
+.botao-contatos-zap {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whatsapp-container {
+  display: flex;
+  align-items: center;
+  margin: 0; /* Espaçamento vertical entre os contêineres */
+  padding: 0.12vw;
+  gap: 0.7vw;
+}
+
+.texto_botao {
+  font-size: 0.9vw;
+  display: flex;
+  flex-direction: column; /* Coloca os elementos em uma coluna */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+  padding: 2px;
+  font-weight: 600;
+}
+.texto_botao-Whatszap {
+  padding: 0;
+  font-size: 0.9vw;
+  font-weight: 600;
+}
+.img-botao-Watszap {
+  height: 1.5vw;
+}
+.receitas {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 50%;
+  padding: 3rem 2rem;
+  margin: 0;
+}
+
+.receitas-cabecalhos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.receitas-titulo {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.58vw;
+  font-weight: 900;
+  color: #ee09e2;
+  word-wrap: break-word; /* Garante que palavras longas quebrem corretamente */
+  overflow-wrap: break-word; /* Compatibilidade com navegadores mais antigos */
+}
+
+.receitas-subtitulo {
+  text-align: center;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 1.24vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.receitas-card-container {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar em várias linhas */
+  gap: 10px; /* Espaçamento entre os contêineres */
+  justify-content: center; /* Centraliza os contêineres */
+  align-items: stretch; /* Garante que todos os contêineres ocupem a mesma altura */
+}
+
+.receitas-card {
+  cursor: grab;
+  border: 0.3vw solid #ee09e2;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 10px;
+  /*Cornerradius*/
+  transition: transform 0.3s ease-in-out;
+  /*Animaçãodetransição*/
+  flex: 1 1 calc(50% - 20px);
+  /*Cadacontêinerocupa50%dalarguramenosoespaçamento*/
+  display: flex;
+  flex-direction: column;
+  /*Colocaositensemumacoluna*/
+  justify-content: space-between;
+  /*Distribuioespaçoigualmenteentreositens*/
+  align-items: center;
+  /*Centralizaositenshorizontalmente*/
+  gap: 1rem;
+  /*Espaçamentoentreositensdentrodocard*/
+  margin: 10px 5px;
+  /*Ajustaoespaçamentoentreoscontêineres*/
+  padding: 20px;
+  box-sizing: border-box;
+  /* Inclui o padding na largura total */
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+}
+
+.receitas-card header,
+.receitas-card p {
+  margin: 0; /* Remove a margem padrão dos elementos de texto */
+  padding: 0; /* Remove qualquer padding adicional */
+}
+
+.receitas-card h3 {
+  margin: 0; /* Remove a margem padrão do título */
+  padding: 0; /* Remove qualquer padding adicional */
+}
+
+.receitas-card p span {
+  margin-bottom: 10px; /* Espaçamento entre as descrições */
+}
+
+.receitas-card p:last-child span:last-child {
+  margin-bottom: 0; /* Remove a margem inferior do último span */
+}
+
+.receitas-card-central {
+  cursor: grab;
+  border: 0.3vw solid #ee09e2;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  width: 100%; /* Largura fixa para todos os contêineres */
+  border-radius: 10px; /* Corner radius */
+  transition: transform 0.3s ease-in-out; /* Animação de transição */
+  flex: 1 1 calc(50%); /* Cada contêiner ocupa 50% da largura menos o espaçamento */
+  display: flex;
+  flex-direction: column; /* Coloca os itens em uma coluna */
+  justify-content: space-between; /* Distribui o espaço igualmente entre os itens */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  gap: 1rem; /* Espaçamento entre os itens dentro do card */
+  margin: 10px 5px; /* Ajusta o espaçamento entre os contêineres */
+  padding: 20px;
+  box-sizing: border-box; /* Inclui o padding na largura total */
+  flex-basis: 100%; /* O contêiner central ocupa a linha inteira */
+  display: flex;
+  justify-content: center; /* Centraliza o contêiner */
+}
+
+.receitas-card-cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0; /* Remove qualquer padding adicional */
+}
+
+.receitas-card-cabecalho-detalhes {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0; /* Remove qualquer padding adicional */
+}
+
+.receita-titulo {
+  text-align: center; /*centraliza o texto*/
+  margin: 0;
+  padding: 0; /* Remove qualquer padding adicional */
+  color: #a13e3e;
+  font-family: Montserrat;
+  font-size: 3.56vw;
+  font-weight: 900;
+}
+
+.dinheiro {
+  display: block; /* Garante que o <span> ocupe uma linha inteira */
+  text-align: center; /* Centraliza o texto dentro do <span> */
+  color: #ee09e2;
+  margin: 10px;
+}
+
+.receita-descricao {
+  margin: 0;
+  padding: 0; /* Remove qualquer padding adicional */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 1.74vw;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: #ee09e2;
+  -moz-text-decoration-color: #ee09e2;
+  flex-basis: 100%; /* O contêiner central ocupa a linha inteira */
+}
+.receita-descricao:hover {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ee09e2;
+  font-family: Inter;
+  font-size: 2.54vw;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: font-size 0.3s ease 0s;
+  text-decoration-color: #ffffff;
+}
+
+.receita-descricao span {
+  margin-bottom: 10px; /* Adiciona espaçamento entre os spans */
+  padding: 0; /* Remove qualquer padding adicional */
+}
+
+.receita-descricao:last-child span:last-child {
+  margin-bottom: 0; /* Remove a margem inferior do último span dentro do último parágrafo */
+  padding: 0; /* Remove qualquer padding adicional */
+}
+
+.footer-midia {
+  color: #ffffff;
+  font-size: 2vw;
+  font-family: "Merriweather", serif;
+  padding: 2vw;
+ 
+  font-weight: 900;
+}
+
+.menu_footer {
+  padding: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-icons-redesocial {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-size: 6.9vw;
+  font-weight: 600;
+  transition: font-size 0.3s ease 0s;
+  gap: 0;
+  margin: 0;
+  padding: 0.3vw;
+}
+.text-icons-redesocial:hover {
+  font-size: 9.99vw;
+  color: #ee09e2;
+}
+
+
+.logo_icons {
+  width: 4vw;
+  height: 4vw;
+  
+}
+
+footer {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.text-icons-redesocial {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.99vw;
+  transition: font-size 0.3s ease 0s;
+  text-decoration: none;
+  color: inherit;
+}
+.text-icons-redesocial:hover {
+  font-size: 2.99vw;
+  color: #ee09e2;
+}
+.footer-autor {
+  color: #736F76;
+  font-family: Inter;
+  font-size: 1.54vw;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+
+}
+
+.footer-copy {
+  color: #736F76;
+  font-family: Inter;
+  font-size: 0.7vw;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.footer-copy:hover {
+  color: #460505;
+}
+
+.amor {
+  font-size: 2.79vw;
+  color: #ee09e2;
+  cursor: grab;
+  padding: 0 1vw;
+  transition: font-size 0.3s ease 0s;
+  -webkit-transition: font-size 0.3s ease 0s;
+  -moz-transition: font-size 0.3s ease 0s;
+  -ms-transition: font-size 0.3s ease 0s;
+  -o-transition: font-size 0.3s ease 0s;
+}
+
+.amor:hover {
+  font-size: 2.79vw;
+  
+  color: red;
+}
