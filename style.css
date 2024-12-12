@@ -329,11 +329,11 @@ button:hover {
   align-items: center;
   margin: 0; /* Espaçamento vertical entre os contêineres */
   padding: 0.12vw;
-  gap: 0.7vw;
+  gap: 0.3vw;
 }
 
 .texto_botao {
-  font-size: 0.9vw;
+  font-size: 1vw;
   display: flex;
   flex-direction: column; /* Coloca os elementos em uma coluna */
   align-items: center; /* Centraliza os elementos horizontalmente */
@@ -342,11 +342,11 @@ button:hover {
 }
 .texto_botao-Whatszap {
   padding: 0;
-  font-size: 0.9vw;
+  font-size: 1vw;
   font-weight: 600;
 }
 .img-botao-Watszap {
-  height: 1.5vw;
+  height: 1.8vw;
 }
 .receitas {
   display: flex;
