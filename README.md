@@ -68,6 +68,9 @@ For more information or suggestions, feel free to get in touch.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 SCREEN PC 1920X1080px
 ![image](https://github.com/user-attachments/assets/3ad06a7a-3141-430b-8e00-7cb57aa5fc37)
+![image](https://github.com/user-attachments/assets/1bade956-1437-44d3-9985-b6a754ff82a8)
+![image](https://github.com/user-attachments/assets/28a4f948-06b4-4548-a5cb-69adafe448b3)
+
 
 
 Samsung Galaxy S24 Ultra (2023) - 360x776px
