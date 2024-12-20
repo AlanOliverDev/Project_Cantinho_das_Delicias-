@@ -68,7 +68,9 @@ For more information or suggestions, feel free to get in touch.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 SCREEN PC 1920X1080px
 ![image](https://github.com/user-attachments/assets/3ad06a7a-3141-430b-8e00-7cb57aa5fc37)
-![image](https://github.com/user-attachments/assets/1bade956-1437-44d3-9985-b6a754ff82a8)
+![image](https://github.com/user-attachments/assets/3e7042fd-fbeb-4e5f-b9ff-8b9e9b2ef3c1)
+![image](https://github.com/user-attachments/assets/f1e8236f-87d7-48ea-9c49-3fd00c596fa0)
+![image](https://github.com/user-attachments/assets/60492ae1-223b-4e7f-8ecc-feced12ea75b)
 ![image](https://github.com/user-attachments/assets/28a4f948-06b4-4548-a5cb-69adafe448b3)
 
 
