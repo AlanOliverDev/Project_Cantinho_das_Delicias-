@@ -76,7 +76,8 @@ SCREEN PC 1920X1080px
 
 
 Samsung Galaxy S24 Ultra (2023) - 360x776px
-![image](https://github.com/user-attachments/assets/b771f57e-e187-4fd3-bbfa-d4b0e3d55f91)
+![image](https://github.com/user-attachments/assets/7e52b92a-bcd8-4ee3-b6fd-ffb917a681dc)
+
 
 
 
